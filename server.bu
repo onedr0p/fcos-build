@@ -1,0 +1,12 @@
+# server.bu
+variant: fcos
+version: 1.5.0
+passwd:
+  users:
+    - name: devin
+      groups: ["wheel", "sudo"]
+      ssh_authorized_keys:
+        - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJnRHFdQWqxfTRuioNM4G3vZyWQy18Xty1+vQV0qm/6G
+        - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBDrc3xHlQUpeEiZdysU2BOFs9ZJ9/Li72iYGxsbggPU
+        - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIB75L4ZEN17wcsK765dWzqlf0lY+sbK25QCIvebB/+1x
+        - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIINeKPsURFDL0OcpXcDic3vVc+0BxcdTRl8eC3b5LZHH
