@@ -16,5 +16,10 @@ jobs:
       image: quay.io/coreos/butane:release
       options: --privileged
     steps:
+      - name: Install Workflow Tools
+        shell: bash
+        run: |
+          dnf install -y git
+
       - name: Checkout
         uses: actions/checkout@v4
