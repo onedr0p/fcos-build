@@ -13,13 +13,12 @@ jobs:
     permissions:
       contents: write
     container:
-      image: quay.io/coreos/butane:release
+      image: docker.io/library/fedora:latest
       options: --privileged
     steps:
       - name: Install Workflow Tools
         shell: bash
-        run: |
-          dnf install -y git
+        run: dnf install -y git coreos-installer butane ignition-validate
 
       - name: Checkout
         uses: actions/checkout@v4
